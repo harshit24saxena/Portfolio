@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+  --breakpoint-sm: 500px;
+  --breakpoint-md: 650px;
+}
+
+:root{
+  --bgColor : #fff8ed;
+  --headingTextColor : #2273f3;
+  --paraTextColor : #393636;
+}
+html,body{
+  overflow-x: hidden;
+  background-color: var(--bgColor);
+  @media (min-width: 800px) {
+    width: 1000px;
+    margin: auto
+  }
+}
+p{
+  color: var(--paraTextColor)
+}
+img{
+  border-radius: 16px;
+}
+@layer utilities{
+  .subHeading{
+    @apply text-3xl italic font-light text-(--headingTextColor)
+  }
+}

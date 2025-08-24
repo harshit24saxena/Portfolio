@@ -20,7 +20,7 @@ const SocialLinK = () => {
     {SocialLinkData.map((item) => {
 
       return(
-      <a href={item.href} key={item.key} className="flex gap-3 rounded-2xl border border-(--paraTextColor) h-fit w-fit items-center ">
+      <a href={item.href} key={item.key} className="hover:border-(--headingTextColor) hover:shadow-xl/40 hover:shadow-blue-950 hover:ring flex gap-3 rounded-2xl border border-(--paraTextColor) h-fit w-fit items-center ">
         <img className="w-8 h-8 pl-1 rounded-2xl" src={item.src} alt="" />
         <p className="pr-2">{item.name}</p>
       </a>)

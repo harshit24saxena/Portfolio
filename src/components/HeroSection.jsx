@@ -1,14 +1,10 @@
-import React from "react";
-import SocialLinK from "../utilites/SocialLinK";
+
+import SocialLinK from "../utilities/SocialLinK";
+import Contact from "./Contact";    
 
 const HeroSection = () => {
   return (
-    <div className="mt-5 md:flex md:items-start md:gap-5 md:justify-between ">
-      <img
-        src="https://th.bing.com/th/id/OIP.HfKRI-KYFgwmWdq-FxFYKgHaE7?w=233&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
-        alt=""
-        className="w-full md:w-3/5 h-75 md:my-10"
-      />
+    <div className="mt-5 md:flex md:items-start md:gap-20 md:justify-between">
 
       <p className="my-8 py-4 md:w-2/5">
         Passionate MERN stack web developer crafting dynamic and responsive web
@@ -17,6 +13,7 @@ const HeroSection = () => {
           <SocialLinK />
         </div>
       </p>
+      <Contact />
     </div>
   );
 };

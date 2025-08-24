@@ -6,13 +6,14 @@
 }
 
 :root{
-  --bgColor : #fff8ed;
+  --bgColor : lab(97.84% 0.48 6.09);
   --headingTextColor : #2273f3;
   --paraTextColor : #393636;
 }
 html,body{
   overflow-x: hidden;
   background-color: var(--bgColor);
+  scroll-behavior: smooth;
   @media (min-width: 800px) {
     width: 1000px;
     margin: auto
@@ -27,5 +28,8 @@ img{
 @layer utilities{
   .subHeading{
     @apply text-3xl italic font-light text-(--headingTextColor)
+  }
+  .navLinkHover{
+    @apply hover:text-(--bgColor) hover:bg-(--headingTextColor) px-2 py-1 rounded-2xl
   }
 }

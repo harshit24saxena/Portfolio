@@ -12,7 +12,7 @@ const Navbar = () => {
 
   return (
     <navbar className="flex justify-between m-3 text-(--headingTextColor)">
-      <h3 className="m-3 text-nowrap font-bold">Harshit Saxena</h3>
+      <h3 className="m-3 text-3xl text-nowrap font-bold">Harshit Saxena</h3>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"

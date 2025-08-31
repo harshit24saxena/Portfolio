@@ -28,9 +28,9 @@ const Project = () => {
         </div>
       </div>
         <div className="">
-        <img className="sm:h-40 md:h-80" src="/Public/assests/bkfull.png" alt="" />
-        <img className="sm:h-40 md:h-80" src="/Public/assests/profileFull.png" alt="" />
-        <img className="border-3 rounded-xl hidden h-100 top-30 absolute sm:block sm:h-70 sm:right-30  md:right-70 lg:right-90" src="/Public/assests/homeMobile.png" alt="" />
+        <img className="sm:h-40 md:h-80" src="/assests/bkfull.png" alt="" />
+        <img className="sm:h-40 md:h-80" src="/assests/profileFull.png" alt="" />
+        <img className="border-3 rounded-xl hidden h-100 top-30 absolute sm:block sm:h-70 sm:right-30  md:right-70 lg:right-90" src="/assests/homeMobile.png" alt="" />
         </div>
     </div>
   );

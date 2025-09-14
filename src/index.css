@@ -2,13 +2,15 @@
 
 @theme {
   --breakpoint-sm: 500px;
-  --breakpoint-md: 650px;
+  --breakpoint-md: 650px;  
+  
 }
 
 :root{
-  --bgColor : lab(97.84% 0.48 6.09);
-  --headingTextColor : #2273f3;
-  --paraTextColor : #393636;
+  --bgColor : lab(3.02% 0 0);
+  --headingTextColor : #6ea3f9;
+  --paraTextColor : #c1c1c1;
+  --OnLoadingAnimation : loading 0.5s ease-in-out forwards;
 }
 html,body{
   overflow-x: hidden;
@@ -26,10 +28,88 @@ img{
   border-radius: 16px;
 }
 @layer utilities{
+    @keyframes loading {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+    @keyframes navAnimation {
+    0% {
+      opacity: 0;
+      transform: translateY(
+        -100%
+      );
+    }
+    100% {
+      opacity: 1;
+            transform: translateY(
+        0
+      );
+    }
+  }
+    @keyframes scrollAnimation {
+    0% {
+      opacity: 0;
+      transform: translateX(
+        100%
+      );
+    }
+    100% {
+      opacity: 1;
+            transform: translateX(
+        0
+      );
+    }
+  } 
+    @keyframes scrollAnimationProject {
+    0% {
+      opacity: 0;
+      transform: translateX(
+        -100%
+      );
+    }
+    100% {
+      opacity: 1;
+            transform: translateX(
+        0
+      );
+    }
+  } 
+  @keyframes projectAnimation {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    
+  }
+    
   .subHeading{
     @apply text-3xl italic font-light text-(--headingTextColor)
   }
   .navLinkHover{
     @apply hover:text-(--bgColor) hover:bg-(--headingTextColor) px-2 py-1 rounded-2xl
   }
-}
+  .loadingAnimation{ 
+    animation: loading 0.5s ease-in-out forwards;
+  } 
+  .navLoadingAnimation{
+    animation: navAnimation 0.5s ease-in-out forwards;
+  }
+  .scrollAnimation{
+    animation: scrollAnimation 1s ease-in-out forwards;
+  }
+  .scrollAnimationProjects{
+    animation: scrollAnimationProject 1s ease-in-out forwards;
+  }
+  .projectAnimation{
+    animation:  1s projectAnimation ease-in-out forwards;
+  }
+  }

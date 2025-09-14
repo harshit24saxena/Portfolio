@@ -1,9 +1,8 @@
 
 const Contact = () => {
   return (
-    <div id='Contact' className=''>
-      <h3 className='subHeading'> CONTACT </h3>
-      <h3 className='subHeading' >with me</h3>
+    <div id='Contact' className='mt-6'>
+      <h3 className='subHeading'> Contact Me </h3>
       <div className='my-8'>
             <h6>Address</h6>
             <p className='mb-2'>152, vidhyapati Nagar, ujjain , Madhya Pradesh, India</p>

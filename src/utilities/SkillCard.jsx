@@ -5,35 +5,35 @@ const SkillList = [
   },
   {
     src: "/assests/rmbg/css-removebg-preview.png",
-    name: "css",
+    name: "CSS",
   },
   {
        src: "/assests/rmbg/js-removebg-preview.png",
-    name: "javascript",
+    name: "JAVASCRIPT",
   },
   {
     src: "/assests/rmbg/node-removebg-preview.png",
-    name: "node js",
+    name: "NODE JS",
   },
   {
     src: "/assests/rmbg/express-removebg-preview.png",
-    name: "express",
+    name: "EXPRESS JS",
   },
   {
       src: "/assests/rmbg/react-removebg-preview.png",
-    name: "react",
+    name: "REACT JS",
   },
   {
     src: "/assests/rmbg/tailwind-removebg-preview.png",
-    name: "tailwind",
+    name: "TAILWIND",
   },
   {
     src: "/assests/rmbg/git-removebg-preview.png",
-    name: "git",
+    name: "GIT",
   },
   {
     src: "/assests/rmbg/canva-removebg-preview.png",
-    name: "canva",
+    name: "CANVA",
   },
   {
     src: "/assests/rmbg/SQL-removebg-preview.png",
@@ -41,11 +41,11 @@ const SkillList = [
   },
   {
     src: "/assests/rmbg/mongoDB-removebg-preview.png",
-    name: "MongoDB",
+    name: "MONGODB",
   },
   {
     src: "/assests/rmbg/docker-removebg-preview.png",
-    name: "Docker",
+    name: "DOCKER",
   },
 ];
 const SkillCard = () => {

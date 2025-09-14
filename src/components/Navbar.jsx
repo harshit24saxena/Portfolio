@@ -11,7 +11,7 @@ const Navbar = () => {
 
 
   return (
-    <navbar className="flex justify-between m-3 text-(--headingTextColor)">
+    <navbar className="navLoadingAnimation flex justify-between m-3 text-(--headingTextColor)">
       <h3 className="m-3 text-3xl text-nowrap font-bold">Harshit Saxena</h3>
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -32,9 +32,9 @@ const Navbar = () => {
 
       <div id="menuCard" className="hidden md:block absolute md:static top-10 right-0 ">
         <div className="flex flex-col m-2 sm:flex-row sm:gap-3">
-        <a className="navLinkHover hover:shadow-xl/40 hover:shadow-blue-950" href="#AboutMe">AboutMe</a>
-        <a className="navLinkHover hover:shadow-xl/40 hover:shadow-blue-950" href="#Project">Project</a>
-        <a className="navLinkHover hover:shadow-xl/40 hover:shadow-blue-950 " href="#Contact">Contact</a>
+        <a className="navLinkHover transition-all ease-in-out delay-100 duration-250 hover:shadow-xl/40 hover:shadow-blue-950 " href="#AboutMe">AboutMe</a>
+        <a className="navLinkHover transition-all ease-in-out delay-100 duration-250 hover:shadow-xl/40 hover:shadow-blue-950" href="#Project">Project</a>
+        <a className="navLinkHover transition-all ease-in-out delay-100 duration-250 hover:shadow-xl/40 hover:shadow-blue-950 " href="#Contact">Contact</a>
         </div>
       </div>
     </navbar>
